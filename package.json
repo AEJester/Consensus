@@ -1,0 +1,18 @@
+{
+  "name": "consensus",
+  "version": "1.0.0",
+  "description": "A tool for creating polls for the general consensus.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Ryan Monaghan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "data-chest": "^3.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}
