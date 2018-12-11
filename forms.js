@@ -1,26 +1,26 @@
 let question = 1;
 $(() => {
     $("#multiple").click(() => {
-        $("#form-html").append(`<div class="form-group" id="removable-${question}"><p id="lb-question-${question}">Question ${question}</p><label class="editable" contenteditable="true" for="question-${question}">Edit Me</label><select class="form-control" id="question-${question}"></select></div>`)
+        $("#form-html").append(`<div class="form-group" id="removable-${question}"><p id="lb-question-${question}">Question ${question}</p><label class="editable" contenteditable="true" for="question-${question}">Edit Me</label><select name="question-${question}" class="form-control" id="question-${question}"></select></div>`)
         question++;
         $("#formdata").val($("#form-html").html())
     });
     $("#selection").click(() => {
-        $("#form-html").append(`<div class="form-group" id="removable-${question}"><p id="lb-question-${question}">Question ${question}</p><label class="editable" contenteditable="true" for="question-${question}">Edit Me</label><select multiple class="form-control" id="question-${question}"></select></div>`)
+        $("#form-html").append(`<div class="form-group" id="removable-${question}"><p id="lb-question-${question}">Question ${question}</p><label class="editable" contenteditable="true" for="question-${question}">Edit Me</label><select name="question-${question}" multiple class="form-control" id="question-${question}"></select></div>`)
         question++;
         $("#formdata").val($("#form-html").html())
     });
     $("#input").click(() => {
         $("#form-html").append(`<div class="form-group" id="removable-${question}"><p id="lb-question-${question}">Question ${question}</p>
         <label contenteditable="true" for="question-${question}">Edit Me</label>
-        <input type="text" class="form-control text" id="question-${question}" placeholder="Set placeholder below."></div>`)
+        <input type="text" name="question-${question}" class="form-control text" id="question-${question}" placeholder="Set placeholder below."></div>`)
         question++;
         $("#formdata").val($("#form-html").html())
     });
     $("#textarea").click(() => {
         $("#form-html").append(`<div class="form-group" id="removable-${question}"><p id="lb-question-${question}">Question ${question}</p>
         <label contenteditable="true" for="question-${question}">Edit Me</label>
-        <textarea class="form-control" id="question-${question}" rows="5"></textarea>
+        <textarea class="form-control" name="question-${question}" id="question-${question}" rows="5"></textarea>
       </div>`)
         question++;
         $("#formdata").val($("#form-html").html())

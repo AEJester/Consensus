@@ -64,12 +64,12 @@
                                         <p>1) What email whould we send the results to?</p>
                                         <div class="form-group">
                                             <label for="email">Email address</label>
-                                            <input class="form-control" type="email" id="email" placeholder="name@example.com">
+                                            <input name="email" class="form-control" type="email" id="email" placeholder="name@example.com">
                                         </div><br>
                                         <p>2) Would you like to be notified when someone answers your poll?</p>
                                         <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Yes/No</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                <select name="notified_response" class="form-control" id="exampleFormControlSelect1">
                                                   <option>Yes</option>
                                                   <option>No</option>
                                                 </select>
@@ -117,7 +117,7 @@
                                                                     </button><br><br>
                                                                     <div class="form-group">
                                                                             <label for="formdata">Form HTML (Bootstrap version: 4.1)</label>
-                                                                            <input type="email" class="form-control" id="formdata" placeholder="Form Data"><br>
+                                                                            <input name="formhtml" type="text" class="form-control" id="formdata" placeholder="Form Data"><br>
                                                                           </div>
                                                             <br><br><br>
                                                             <button class="btn btn-outline-primary" type="submit">Submit</button>
