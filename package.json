@@ -4,7 +4,7 @@
   "description": "A tool for creating polls for the general consensus.",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "node app.js"
   },
   "author": "Ryan Monaghan",
   "license": "MIT",
